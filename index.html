@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVHP</title>
+    <link rel="stylesheet" href="./Dung-cu-the-thao-main/css/bootstrap.min.css">
+    <script src="./Dung-cu-the-thao-main/js/jquery-3.6.4.min.js"></script>
+    <script src="./Dung-cu-the-thao-main/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./Dung-cu-the-thao-main/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+
+<body>
+
+    <div class="modal fade" id="cartModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <center><h4>Giỏ hàng của bạn</h4></center>
+                    <button type="button" class="btn btn-close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table table-borderd" id="MDCART">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Hình ảnh</th>
+                                    <th>Giá</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <h4>
+                        Tổng : <span id="thongbaogia"></span>
+                    </h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="header">
+        <div class="logo_bar">
+            <a href="./index.html"><img src="./Dung-cu-the-thao-main/img/logo_1.jpg" alt=""></a>
+        </div>
+        <div class="menu_bar">
+            <ul class="menu_bar_cover">
+                <li><a href="#men">Men</a></li>
+                <li><a href="#women">Women</a></li>
+                <li><a href="#kids">Kids</a></li>
+                <li><a href="#sale">Sale</a></li>
+                <li><a href="#customise">Customise</a></li>
+            </ul>
+        </div>
+        <div class="side_bar">
+            <ul class="side_bar_cover">
+                <li><a href="#HOTROOO">Hỗ trợ</a></li>
+                <li style="margin-right: 16px;"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li>
+                    <a href="#">
+                        <i style="padding: 8px 10px 0 10px; margin-right: 10px;"  class="fa-solid fa-cart-shopping" data-toggle="modal" data-target="#cartModal"></i>
+                        <span id="thongbao_carttt" style="color: rgb(253, 97, 97)
+                        ; height: 16px; width: 16px; position: absolute; top: 16px; left: 128px; border-radius: 10px;" ></span>
+                    </a>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+                        Đăng nhập
+                    </button>
+                </li>
+                <h6>*</h6>
+            </ul>
+        </div>
+    </header>
+    <div class="bodyy">
+        <div class="banner_container">
+            <div class="banner banner1">
+            </div>
+            <div class="banner banner2">
+            </div>
+            <div class="banner banner3">
+            </div>
+            <div class="banner banner4">
+            </div>
+            <div class="banner banner1">
+            </div>
+        </div>
+
+        <div class="above_tv_show">
+            <ul>
+                <li>Bộ lọc</li>
+                <li> 20 kết quả</li>
+            </ul>
+            <li>Tìm hiểu thêm</li>
+        </div>
+
+        <div class="tv_show_buy">
+            <div class="buy_option">
+                <div class="option_cover_type">
+                    <ul>
+                        <h4>Dòng Sản phẩm</h4>
+                        <li><a href="#"><input type="radio" name="" id="">Giày</a></li>
+                        <li><a href="#"><input type="radio" name="" id="">Dép</a></li>
+                        <li><a href="#"><input type="radio" name="" id="">Quần</a></li>
+                        <li><a href="#"><input type="radio" name="" id="">Áo</a></li>
+                        <li><a href="#"><input type="radio" name="" id="">Phụ kiện khác</a></li>
+                    </ul>
+                </div>
+                <div class="option_cover_type">
+                    <ul>
+                        <h4>Mục đích sử dụng</h4>
+                        <li><a href="#"><input type="radio" name="" id="">Đi du lịch</a></li>
+                        <li><a href="#"><input type="radio" name="" id="">Tập Gym</a></li>
+                        <li><a href="#"><input type="radio" name="" id="">Thể thao ngoài trời</a></li>
+                    </ul>
+                </div>
+                <div class="option_cover_type">
+                    <ul>
+                        <h4>Khoảng giá</h4>
+                        <li><a href="#"><input type="radio" name="" id="">Trên 15.000.000</a></li>
+                        <li><a href="#"><input type="radio" name="" id="">12.500.000 - 15.000.000</a></li>
+                        <li><a href="#"><input type="radio" name="" id="">10.000.000 - 12.499.000</a></li>
+                        <li><a href="#"><input type="radio" name="" id="">7.500.000 - 9.999.000</a></li>
+                        <li><a href="#"><input type="radio" name="" id="">Dưới 7.500.000</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="buy_information" id="men">
+
+                <!-- PRODUCT 01  -->
+                <div class="product__" id="sale">
+                    <div class="product_img">
+                        <a href="./Dung-cu-the-thao-main/html/product1.html">
+                            <img src="./Dung-cu-the-thao-main/img/Product/v2k-run-shoes-zJV8TV.png" alt="" id="sppr1">
+                        </a>
+                    </div>
+                    <div class="product_short">
+                        <h3>Nike V2K Run</h3>
+                    </div>
+                    <div class="product_function">
+                        <p>Phong cách cổ điển vào tương lai</p>
+                        <p>Chất liệu kim loại sặc sỡ</p>
+                        <p>Chi tiết nhựa đặc trưng</p>
+                        <p>Đế giữa có thiết kế cổ điển hoàn hảo</p>
+                        <div class="btn__buy">
+                            <button type="button" class="btn carttttt-btn" id="btn_cart1">Thêm giỏ hàng</button>
+                        </div>
+                        <div class="location"><a href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
+                    </div>
+                </div>
+
+
+
+                <!-- PRODUCT 02 -->
+                <div class="product__">
+                    <div class="product_img">
+                        <a href="./Dung-cu-the-thao-main/html/product1.html">
+                            <img src="./Dung-cu-the-thao-main/img/Product/dunk-low-retro-se-shoes-tsMmHC.png" alt="" id="sppr2">
+                        </a>
+                    </div>
+                    <div class="product_short">
+                        <h3>Nike Dunk Low Retro SE</h3>
+                    </div>
+                    <div class="product_function">
+                        <p>Biểu tượng bóng rổ của những năm 80</p>
+                        <p>Phong cách cổ điển trở lại đường phố</p>
+                        <p>Cổ giày mềm mại và thấp</p>
+                        <div class="btn__buy">
+                            <button type="button" class="btn carttttt-btn" id="btn_cart2">Thêm giỏ hàng</button>
+                        </div>
+                        <div class="location"><a href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
+                    </div>
+                </div>
+
+                <!-- PRODUC 03 -->
+                <div class="product__" id="customise">
+                    <div class="product_img">
+                        <a href="./Dung-cu-the-thao-main/html/product1.html">
+                            <img src="./Dung-cu-the-thao-main/img/Product/air-jordan-1-low-se-shoes-hgcLbC.jpg" alt="" id="sppr3">
+                        </a>
+                    </div>
+                    <div class="product_short">
+                        <h3>Air Jordan 1 Low SE</h3>
+                    </div>
+                    <div class="product_function">
+                        <p>Màu sắc mới và các cấu trúc vải mới</p>
+                        <p>Được làm từ các chất liệu cao cấp</p>
+                        <div class="btn__buy">
+                            <button type="button" class="btn carttttt-btn" id="btn_cart3">Thêm giỏ hàng</button>
+                        </div>
+                        <div class="location"><a href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 04 -->
+                <div class="product__" id="kids">
+                    <div class="product_img">
+                        <a href="./Dung-cu-the-thao-main/html/product1.html">
+                            <img src="./Dung-cu-the-thao-main/img/Product/p-6000-shoes-QcQbpx.png" alt="" id="sppr4">
+                        </a>
+                    </div>
+                    <div class="product_short">
+                        <h3>Nike P-6000</h3>
+                    </div>
+                    <div class="product_function">
+                        <p>Từ Nike Air Pegasus năm 2006</p>
+                        <p>Phong cách, thoáng khí, thoải mái</p>
+                        <div class="btn__buy">
+                            <button type="button" class="btn carttttt-btn" id="btn_cart4">Thêm giỏ hàng</button>
+                        </div>
+                        <div class="location"><a href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 5 -->
+                <div class="product__">
+                    <div class="product_img">
+                        <a href="./Dung-cu-the-thao-main/html/product1.html">
+                            <img src="./Dung-cu-the-thao-main/img/Product/dunk-low-retro-shoes-69h36X.png" alt="" id="sppr5">
+                        </a>
+                    </div>
+                    <div class="product_short">
+                        <h3>Nike Dunk Low Retro</h3>
+                    </div>
+                    <div class="product_function">
+                        <p>Biểu tượng bóng rổ</p>
+                        <p>Tinh thần của những năm 80</p>
+                        <p>Cổ giày mềm mại</p>
+                        <div class="btn__buy">
+                            <button type="button" class="btn carttttt-btn" id="btn_cart5">Thêm giỏ hàng</button>
+                        </div>
+                        <div class="location"><a href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
+                    </div>
+                </div>
+
+
+                <!-- PRODUCT 6 -->
+                <div class="product__">
+                    <div class="product_img">
+                        <a href="./Dung-cu-the-thao-main/html/product1.html">
+                            <img src="./Dung-cu-the-thao-main/img/Product/air-jordan-1-low-shoes-459b4T.png" alt="" id="sppr6">
+                        </a>
+                    </div>
+                    <div class="product_short">
+                        <h3>Air Jordan 1 Low</h3>
+                    </div>
+                    <div class="product_function">
+                        <p>Luôn luôn phong cách</p>
+                        <p>Di sản của Jordan</p>
+                        <p>Thoải mái suốt cả ngày</p>
+                        <div class="btn__buy">
+                            <button type="button" class="btn carttttt-btn" id="btn_cart6">Thêm giỏ hàng</button>
+                        </div>
+                        <div class="location"><a href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 7 -->
+                <div class="product__" id="women">
+                    <div class="product_img">
+                        <a href="./Dung-cu-the-thao-main/html/product1.html">
+                            <img src="./Dung-cu-the-thao-main/img/Product/killshot-2-leather-shoes-1DJNnt.png" alt="" id="sppr7">
+                        </a>
+                    </div>
+                    <div class="product_short">
+                        <h3>Nike Killshot 2 Leather</h3>
+                    </div>
+                    <div class="product_function">
+                        <p>Thân giày bằng da cao cấp</p>
+                        <p>Phong cách cổ điển mới mẻ</p>
+                        <p>Đảm bảo độ bám tốt</p>
+                        <div class="btn__buy">
+                            <button type="button" class="btn carttttt-btn" id="btn_cart7">Thêm giỏ hàng</button>
+                        </div>
+                        <div class="location"><a href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- footer -->
+
+    <div class="footer" id="HOTROOO">
+        <div class="f_box">
+            <div class="foot_box">
+                <h2>Sản phẩm</h2>
+                <p class="p_footer_box">Giày thể thao</p>
+                <p class="p_footer_box">Dép thể thao</p>
+                <p class="p_footer_box">Quần áo thể thao</p>
+                <p class="p_footer_box">Phụ kiện khác</p>
+            </div>
+            <div class="foot_box">
+                <h2>Mua trực tuyến</h2>
+                <p class="p_footer_box">Ưu đãi sinh viên</p>
+                <p class="p_footer_box">Ưu đãi độc quyền</p>
+                <p class="p_footer_box">Tìm cửa hàng</p>
+                <p class="p_footer_box">Khám phá</p>
+            </div>
+            <div class="foot_box">
+                <h2>Bạn cần hỗ trợ</h2>
+                <p class="p_footer_box">Hỗ trợ mua trực tuyến</p>
+                <p class="p_footer_box">Đặt lịch sửa chữa</p>
+                <p class="p_footer_box">Trung tâm bảo hành</p>
+            </div>
+            <div class="foot_box">
+                <h2>Giới thiệu về chúng tôi</h2>
+                <a class="p_footer_box" href="./Dung-cu-the-thao-main/html/Gioithieu.html">Thành viên</a>
+                <a class="p_footer_box" href="./Dung-cu-the-thao-main/html/listsp.html">Sản phẩm</a>
+            </div>
+        </div>
+        <div class="policy_connect">
+            <div class="policy__">
+                <li>
+                    <a href="#">
+                        <p>Chính sách đổi trả</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <p>Chính sách bảo hành</p>
+                    </a>
+                </li>
+            </div>
+            <div class="connect_us">
+                <h3>Kết nối với chúng tôi</h3>
+                <div class="icon_boxx">
+                    <li><a href="https://www.facebook.com/sviuh"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/iuh.edu.vn/"><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href="https://www.youtube.com/@iuh.dhcntphcm"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://iuh.edu.vn/"><i class="fas fa-home"></i></a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal login -->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Đóng">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="main">
+                    <div class="form signin">
+                        <div class="title">
+                            <h1>Đăng nhập account của bạn</h1>
+                        </div>
+                        <fieldset>
+                            <form class="formsig">
+                                <div class="form-group">
+                                    <label for="emailInput">Địa chỉ email</label>
+                                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
+                                        placeholder="Nhập địa chỉ email của bạn">
+                                    <span id="tb_email" style="color: red;"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="passwordInput">Mật khẩu</label>
+                                    <input type="password" class="form-control" id="passwordInput"
+                                        placeholder="Nhập mật khẩu của bạn">
+                                    <span id="tb_passDN" style="color: red;"></span>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberCheck">
+                                    <label class="form-check-label" for="rememberCheck">Ghi nhớ tài khoản của tôi</label>
+                                </div>
+                                <span id="tb_To_bu1" style="color: red;"></span>
+                                <button type="button" class="btn btn-primary" id="SigninAccount">Đăng nhập</button>
+                            </form>
+                        </fieldset>
+                        <p>Chưa có tài khoản ? <a href="./Dung-cu-the-thao-main/html/listDK.html" class="create">Tạo tài khoản</a></p>
+                    </div>
+                    <div class="form signup">
+                        <div class="title">
+                            <h1>Tạo tài khoản của bạn</h1>
+                        </div>
+                        <fieldset>
+                            <form class="formsig">
+                                <div class="form-group">
+                                    <label for="reemailInput">Địa chỉ email</label>
+                                    <input required="required" type="email" class="form-control" id="reemailInput"
+                                        aria-describedby="emailHelp" placeholder="Nhập địa chỉ email của bạn">
+                                    <span id="tb_Email_DK" style="color: red;"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="repasswordInput">Mật khẩu</label>
+                                    <input required="required" type="password" class="form-control" id="repasswordInput"
+                                        placeholder="Nhập mật khẩu của bạn">
+                                    <span id="tb_passDK" style="color: red;"></span>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="repassword">Xác nhận mật khẩu</label>
+                                    <input required="required" type="password" class="form-control" id="repassword"
+                                        placeholder="Xác nhận mật khẩu">
+                                    <span id="tb_repassDK" style="color: red;"></span>
+                                        
+                                </div>
+                                <div class="form-group">
+                                    <label for="fnameInput">Nhập họ tên</label>
+                                    <input required="required" type="text" class="form-control" id="fnameInput"
+                                        placeholder="Họ và tên">
+                                        <span id="tb_HoTen" style="color: red;"></span>
+                                </div>
+                                <button id="dangki-btn" type="button" class="btn btn-primary">Đăng kí</button>
+                            </form>
+                        </fieldset>
+                        <p>Đã có tài khoản ? <a href="#" class="login">Đăng nhập</a></p>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let login =document.querySelector('.login')
+        let create =document.querySelector('.create')
+        let main =document.querySelector('.main')
+
+
+        function KTDN(){
+            var rgc = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(rgc.test($("#emailInput").val()) == true ) {
+                $("#tb_email").html("Email hợp lệ");                
+                // Lấy thông tin người dùng từ localStorage
+                var users = JSON.parse(localStorage.getItem('users') || '[]');
+                var email = $("#emailInput").val();
+                var password = $("#passwordInput").val();
+
+                // Kiểm tra thông tin đăng nhập
+                var isUserExist = users.some(function(user) {
+                    return user.email === email
+                });
+
+                if (isUserExist) {                    
+                    return true;
+                } else {
+                    alert('Email chưa được cấp tài khoản');
+                    $("#tb_email").html("Email hợp lệ nhưng chưa được cấp tài khoản");
+                    return false;
+                }
+                
+            } else {
+                $("#tb_email").html("Email không hợp lệ");          
+                return false;
+            }
+        }
+
+        $("#emailInput").blur(KTDN);
+
+        function KTMK(){
+                var rgc = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{10,20}$/;
+                if(  rgc.test($("#passwordInput").val()) == true ) {
+                    $("#tb_passDN").html("Mật khẩu hợp lệ");  
+                    return true;
+                } else {
+                    $("#tb_passDN").html("Mật khẩu không hợp lệ");          
+                    return false;
+                }
+        }
+        $("#passwordInput").blur(KTMK);
+
+
+        function KTDangKy(){
+                var rgc = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if(  rgc.test($("#reemailInput").val()) == true ) {
+                    $("#tb_Email_DK").html("Email hợp lệ");  
+                    return true;
+                } else {
+                    $("#tb_Email_DK").html("Email không hợp lệ");          
+                    return false;
+                }
+        }        
+        $("#reemailInput").blur(KTDangKy);
+
+        function KTDangKyMK(){
+                var rgc = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{10,20}$/;
+                if(  rgc.test($("#repasswordInput").val()) == true ) {
+                    $("#tb_passDK").html("Mật khẩu hợp lệ");  
+                    return true;
+                } else {
+                    $("#tb_passDK").html("Mật khẩu không hợp lệ");          
+                    return false;
+                }
+        }
+        $("#repasswordInput").blur(KTDangKyMK);
+
+
+        function KiemtraNhapLaiMK(){
+            const passwordInput = document.getElementById("repasswordInput");
+            const password = passwordInput.value;
+
+            const confirmPasswordInput = document.getElementById("repassword");
+            const confirmPassword = confirmPasswordInput.value;
+            if (password === confirmPassword){
+                $("#tb_repassDK").html("Mật khẩu đã trung khớp");  
+                    return true;
+                } else {
+                    $("#tb_repassDK").html("Mật khẩu không trùng khớp");          
+                    return false;
+                }
+        }
+        $("#repassword").blur(KiemtraNhapLaiMK);
+
+
+        function KiemtraHoTen() {
+            var rgc = /^[A-Z][a-z]*(\s[A-Z][a-z]*)*$/;
+            if(  rgc.test($("#fnameInput").val()) == true ) {
+                    $("#tb_HoTen").html("Tên hợp lệ");  
+                    return true;
+                } else {
+                    $("#tb_HoTen").html("Tên không hợp lệ");          
+                    return false;
+                }
+        }
+        $("#fnameInput").blur(KiemtraHoTen);
+        
+
+
+        $("#SigninAccount").click(function(){           
+            if ( !KTDN() || !KTMK() ){
+                $("#tb_To_bu1").html("Mời bạn nhập đúng và đủ thông tin")
+            }else {
+                $("#tb_To_bu1").html("");     
+            }
+            var mail = $("#emailInput").val();
+            var them = " Xin chào " + mail;
+            $("header h6").append(them);
+            $("#loginModal").modal("hide");
+            return true;
+        })
+
+        $("#dangki-btn").click(function(){
+            $("#loginModal").modal("hide");
+        })
+        
+
+    </script>
+</body>
+
+</html>
