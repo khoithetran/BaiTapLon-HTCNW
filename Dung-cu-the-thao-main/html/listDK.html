@@ -84,7 +84,7 @@
 
     <header class="header">
         <div class="logo_bar">
-            <a href="/index.html"><img src="../img/logo_1.jpg" alt=""></a>
+            <a href="/index.html"><img src="/Dung-cu-the-thao-main/img/logo_1.jpg" alt=""></a>
         </div>
         <div class="menu_bar">
             <ul class="menu_bar_cover">
@@ -190,7 +190,7 @@
             var them = "<tr> <td>" + (index + 1) + "</td><td>" + user.email + "</td><td>" + user.name + "</td><td>" + user.password + "</td></tr>";
             $("table tbody").append(them);
         });
-        
+
         function KTDangKy() {
             var rgc = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (rgc.test($("#reemailInput").val()) == true) {
