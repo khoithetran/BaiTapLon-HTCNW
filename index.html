@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    
+    <style>
+        .logo_bar img {
+            height: 60px;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,7 +26,9 @@
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <center><h4>Giỏ hàng của bạn</h4></center>
+                    <center>
+                        <h4>Giỏ hàng của bạn</h4>
+                    </center>
                     <button type="button" class="btn btn-close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -38,7 +43,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                
+
                             </tbody>
                         </table>
                     </div>
@@ -47,7 +52,8 @@
                     </h4>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" data-dismiss="modal" class="btn btn-primary">Thanh toán</button>
+                    <button type="button" data-dismiss="modal" class="btn btn-primary" id="btn-thanhToan">Thanh
+                        toán</button>
                 </div>
             </div>
         </div>
@@ -56,7 +62,7 @@
 
     <header class="header">
         <div class="logo_bar">
-            <a href="./index.html"><img src="./Dung-cu-the-thao-main/img/logo_1.jpg" alt=""></a>
+            <a href="./index.html"><img src="/Dung-cu-the-thao-main/img/logo_1.jpg" alt=""></a>
         </div>
         <div class="menu_bar">
             <ul class="menu_bar_cover">
@@ -73,9 +79,11 @@
                 <li style="margin-right: 16px;"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li>
                     <a href="#">
-                        <i style="padding: 8px 10px 0 10px; margin-right: 10px;"  class="fa-solid fa-cart-shopping" data-toggle="modal" data-target="#cartModal"></i>
-                        <span id="thongbao_carttt" style="color: rgb(253, 97, 97)
-                        ; height: 16px; width: 16px; position: absolute; top: 16px; left: 128px; border-radius: 10px;" ></span>
+                        <i style="padding: 8px 10px 0 10px; margin-right: 10px;" class="fa-solid fa-cart-shopping"
+                            data-toggle="modal" data-target="#cartModal"></i>
+                        <span id="thongbao_carttt"
+                            style="color: rgb(253, 97, 97)
+                        ; height: 16px; width: 16px; position: absolute; top: 16px; left: 128px; border-radius: 10px;"></span>
                     </a>
                 </li>
                 <li>
@@ -83,7 +91,7 @@
                         Đăng nhập
                     </button>
                 </li>
-                <h6>*</h6>
+                <h6></h6>
             </ul>
         </div>
     </header>
@@ -161,7 +169,9 @@
                         <div class="btn__buy">
                             <button type="button" class="btn carttttt-btn" id="btn_cart1">Thêm giỏ hàng</button>
                         </div>
-                        <div class="location"><a href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
+                        <div class="location"><a
+                                href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i
+                                    class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
                     </div>
                 </div>
 
@@ -171,7 +181,8 @@
                 <div class="product__">
                     <div class="product_img">
                         <a href="./Dung-cu-the-thao-main/html/product1.html">
-                            <img src="./Dung-cu-the-thao-main/img/Product/dunk-low-retro-se-shoes-tsMmHC.png" alt="" id="sppr2">
+                            <img src="./Dung-cu-the-thao-main/img/Product/dunk-low-retro-se-shoes-tsMmHC.png" alt=""
+                                id="sppr2">
                         </a>
                     </div>
                     <div class="product_short">
@@ -184,7 +195,9 @@
                         <div class="btn__buy">
                             <button type="button" class="btn carttttt-btn" id="btn_cart2">Thêm giỏ hàng</button>
                         </div>
-                        <div class="location"><a href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
+                        <div class="location"><a
+                                href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i
+                                    class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
                     </div>
                 </div>
 
@@ -192,7 +205,8 @@
                 <div class="product__" id="customise">
                     <div class="product_img">
                         <a href="./Dung-cu-the-thao-main/html/product1.html">
-                            <img src="./Dung-cu-the-thao-main/img/Product/air-jordan-1-low-se-shoes-hgcLbC.jpg" alt="" id="sppr3">
+                            <img src="./Dung-cu-the-thao-main/img/Product/air-jordan-1-low-se-shoes-hgcLbC.jpg" alt=""
+                                id="sppr3">
                         </a>
                     </div>
                     <div class="product_short">
@@ -204,7 +218,9 @@
                         <div class="btn__buy">
                             <button type="button" class="btn carttttt-btn" id="btn_cart3">Thêm giỏ hàng</button>
                         </div>
-                        <div class="location"><a href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
+                        <div class="location"><a
+                                href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i
+                                    class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
                     </div>
                 </div>
 
@@ -224,7 +240,9 @@
                         <div class="btn__buy">
                             <button type="button" class="btn carttttt-btn" id="btn_cart4">Thêm giỏ hàng</button>
                         </div>
-                        <div class="location"><a href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
+                        <div class="location"><a
+                                href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i
+                                    class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
                     </div>
                 </div>
 
@@ -232,7 +250,8 @@
                 <div class="product__">
                     <div class="product_img">
                         <a href="./Dung-cu-the-thao-main/html/product1.html">
-                            <img src="./Dung-cu-the-thao-main/img/Product/dunk-low-retro-shoes-69h36X.png" alt="" id="sppr5">
+                            <img src="./Dung-cu-the-thao-main/img/Product/dunk-low-retro-shoes-69h36X.png" alt=""
+                                id="sppr5">
                         </a>
                     </div>
                     <div class="product_short">
@@ -245,7 +264,9 @@
                         <div class="btn__buy">
                             <button type="button" class="btn carttttt-btn" id="btn_cart5">Thêm giỏ hàng</button>
                         </div>
-                        <div class="location"><a href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
+                        <div class="location"><a
+                                href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i
+                                    class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
                     </div>
                 </div>
 
@@ -254,7 +275,8 @@
                 <div class="product__">
                     <div class="product_img">
                         <a href="./Dung-cu-the-thao-main/html/product1.html">
-                            <img src="./Dung-cu-the-thao-main/img/Product/air-jordan-1-low-shoes-459b4T.png" alt="" id="sppr6">
+                            <img src="./Dung-cu-the-thao-main/img/Product/air-jordan-1-low-shoes-459b4T.png" alt=""
+                                id="sppr6">
                         </a>
                     </div>
                     <div class="product_short">
@@ -267,7 +289,9 @@
                         <div class="btn__buy">
                             <button type="button" class="btn carttttt-btn" id="btn_cart6">Thêm giỏ hàng</button>
                         </div>
-                        <div class="location"><a href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
+                        <div class="location"><a
+                                href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i
+                                    class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
                     </div>
                 </div>
 
@@ -275,7 +299,8 @@
                 <div class="product__" id="women">
                     <div class="product_img">
                         <a href="./Dung-cu-the-thao-main/html/product1.html">
-                            <img src="./Dung-cu-the-thao-main/img/Product/killshot-2-leather-shoes-1DJNnt.png" alt="" id="sppr7">
+                            <img src="./Dung-cu-the-thao-main/img/Product/killshot-2-leather-shoes-1DJNnt.png" alt=""
+                                id="sppr7">
                         </a>
                     </div>
                     <div class="product_short">
@@ -288,7 +313,9 @@
                         <div class="btn__buy">
                             <button type="button" class="btn carttttt-btn" id="btn_cart7">Thêm giỏ hàng</button>
                         </div>
-                        <div class="location"><a href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
+                        <div class="location"><a
+                                href="https://www.google.com/maps/place/Industrial+University+of+Ho+Chi+Minh+City/@10.8221589,106.6842651,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj"><i
+                                    class="fas fa-map-marker-alt"></i> Nơi mua</a></div>
                     </div>
                 </div>
 
@@ -377,8 +404,8 @@
                             <form class="formsig">
                                 <div class="form-group">
                                     <label for="emailInput">Địa chỉ email</label>
-                                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
-                                        placeholder="Nhập địa chỉ email của bạn">
+                                    <input type="email" class="form-control" id="emailInput"
+                                        aria-describedby="emailHelp" placeholder="Nhập địa chỉ email của bạn">
                                     <span id="tb_email" style="color: red;"></span>
                                 </div>
                                 <div class="form-group">
@@ -389,13 +416,15 @@
                                 </div>
                                 <div class="form-group form-check">
                                     <input type="checkbox" class="form-check-input" id="rememberCheck">
-                                    <label class="form-check-label" for="rememberCheck">Ghi nhớ tài khoản của tôi</label>
+                                    <label class="form-check-label" for="rememberCheck">Ghi nhớ tài khoản của
+                                        tôi</label>
                                 </div>
                                 <span id="tb_To_bu1" style="color: red;"></span>
                                 <button type="button" class="btn btn-primary" id="SigninAccount">Đăng nhập</button>
                             </form>
                         </fieldset>
-                        <p>Chưa có tài khoản ? <a href="./Dung-cu-the-thao-main/html/listDK.html" class="create">Tạo tài khoản</a></p>
+                        <p>Chưa có tài khoản ? <a href="./Dung-cu-the-thao-main/html/listDK.html" class="create">Tạo tài
+                                khoản</a></p>
                     </div>
                     <div class="form signup">
                         <div class="title">
@@ -421,20 +450,20 @@
                                     <input required="required" type="password" class="form-control" id="repassword"
                                         placeholder="Xác nhận mật khẩu">
                                     <span id="tb_repassDK" style="color: red;"></span>
-                                        
+
                                 </div>
                                 <div class="form-group">
                                     <label for="fnameInput">Nhập họ tên</label>
                                     <input required="required" type="text" class="form-control" id="fnameInput"
                                         placeholder="Họ và tên">
-                                        <span id="tb_HoTen" style="color: red;"></span>
+                                    <span id="tb_HoTen" style="color: red;"></span>
                                 </div>
                                 <button id="dangki-btn" type="button" class="btn btn-primary">Đăng kí</button>
                             </form>
                         </fieldset>
                         <p>Đã có tài khoản ? <a href="#" class="login">Đăng nhập</a></p>
                     </div>
-                    
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
@@ -444,127 +473,178 @@
     </div>
 
     <script>
-        let login =document.querySelector('.login')
-        let create =document.querySelector('.create')
-        let main =document.querySelector('.main')
+        let login = document.querySelector('.login')
+        let create = document.querySelector('.create')
+        let main = document.querySelector('.main')
 
+        function updateCartQuantity() {
+            var cartQuantity = $('#MDCART tbody tr').length;
+            $('#thongbao_carttt').text(cartQuantity);
+        }
 
-        function KTDN(){
+        $('.carttttt-btn').click(function () {
+            var parent = $(this).closest('.product__');
+            var productName = parent.find('.product_short h3').text();
+            var productImage = parent.find('.product_img img').attr('src');
+            var productPriceText = parent.find('.product_function .btn__buy').prev().text();
+            var productPrice = 9000000;
+            var rowCount = $('#MDCART tbody tr').length + 1;
+            $('#MDCART tbody').append('<tr><td>' + rowCount + '</td><td>' + productName + '</td><td><img src="' + productImage + '" alt="' + productName + '" style="max-width: 100px;"></td><td>' + productPrice.toLocaleString() + '₫</td></tr>');
+            updateTotalPrice(); 
+            updateCartQuantity();
+        });
+
+        // Hàm cập nhật tổng giá trị
+        function updateTotalPrice() {
+            var totalPrice = 0;
+            $('#MDCART tbody tr').each(function () {
+                var priceText = $(this).find('td:nth-child(4)').text();
+                var price = parseFloat(priceText.replace('₫', '').replace(',', ''));
+                totalPrice += price;
+            });
+            var formattedTotalPrice = totalPrice.toLocaleString('en-US', { style: 'currency', currency: 'VND' });
+            if (!formattedTotalPrice.includes('.')) {
+                formattedTotalPrice += ".000";
+            }
+            $('#thongbaogia').text(formattedTotalPrice);
+        }
+
+        $('#btn-thanhToan').click(function () {
+            var greetingText = $('h6').text();
+            
+            if (greetingText.trim() === '') {
+                alert('Vui lòng đăng nhập để thanh toán.');
+            } else {
+                $('#MDCART tbody').empty();
+                $('#thongbao_carttt').text('0');
+                $('#thongbaogia').text('0₫');
+            }
+        });
+
+        function KTDN() {
             var rgc = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if(rgc.test($("#emailInput").val()) == true ) {
-                $("#tb_email").html("Email hợp lệ");                
+            if (rgc.test($("#emailInput").val()) == true) {
+                $("#tb_email").html("Email hợp lệ");
+                $("#tb_email").css("color", "green")
                 // Lấy thông tin người dùng từ localStorage
                 var users = JSON.parse(localStorage.getItem('users') || '[]');
                 var email = $("#emailInput").val();
                 var password = $("#passwordInput").val();
 
                 // Kiểm tra thông tin đăng nhập
-                var isUserExist = users.some(function(user) {
-                    return user.email === email
+                var isUserExist = users.some(function (user) {
+                    return user.email == email
                 });
 
-                if (isUserExist) {                    
+                if (isUserExist) {
                     return true;
                 } else {
                     alert('Email chưa được cấp tài khoản');
                     $("#tb_email").html("Email hợp lệ nhưng chưa được cấp tài khoản");
                     return false;
                 }
-                
+
             } else {
-                $("#tb_email").html("Email không hợp lệ");          
+                $("#tb_email").html("Email không hợp lệ");
+                $("#tb_email").css("color", "red")
                 return false;
             }
         }
 
         $("#emailInput").blur(KTDN);
 
-        function KTMK(){
-                var rgc = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{10,20}$/;
-                if(  rgc.test($("#passwordInput").val()) == true ) {
-                    $("#tb_passDN").html("Mật khẩu hợp lệ");  
-                    return true;
-                } else {
-                    $("#tb_passDN").html("Mật khẩu không hợp lệ");          
-                    return false;
-                }
+        function KTMK() {
+            var rgc = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{10,20}$/;
+            if (rgc.test($("#passwordInput").val()) == true) {
+                $("#tb_passDN").html("Mật khẩu hợp lệ");
+                $("#tb_passDN").css("color", "green")
+                return true;
+            } else {
+                $("#tb_passDN").html("Mật khẩu không hợp lệ");
+                $("#tb_passDN").css("color", "red")
+                return false;
+            }
         }
         $("#passwordInput").blur(KTMK);
 
 
-        function KTDangKy(){
-                var rgc = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if(  rgc.test($("#reemailInput").val()) == true ) {
-                    $("#tb_Email_DK").html("Email hợp lệ");  
-                    return true;
-                } else {
-                    $("#tb_Email_DK").html("Email không hợp lệ");          
-                    return false;
-                }
-        }        
+        function KTDangKy() {
+            var rgc = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (rgc.test($("#reemailInput").val()) == true) {
+                $("#tb_Email_DK").html("Email hợp lệ");
+                $("#tb_Email_DK").css("color", "green")
+                return true;
+            } else {
+                $("#tb_Email_DK").html("Email không hợp lệ");
+                $("#tb_Email_DK").css("color", "red")
+                return false;
+            }
+        }
         $("#reemailInput").blur(KTDangKy);
 
-        function KTDangKyMK(){
-                var rgc = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{10,20}$/;
-                if(  rgc.test($("#repasswordInput").val()) == true ) {
-                    $("#tb_passDK").html("Mật khẩu hợp lệ");  
-                    return true;
-                } else {
-                    $("#tb_passDK").html("Mật khẩu không hợp lệ");          
-                    return false;
-                }
+        function KTDangKyMK() {
+            var rgc = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{10,20}$/;
+            if (rgc.test($("#repasswordInput").val()) == true) {
+                $("#tb_passDK").html("Mật khẩu hợp lệ");
+                $("#tb_passDK").css("color", "green")
+                return true;
+            } else {
+                $("#tb_passDK").html("Mật khẩu không hợp lệ");
+                $("#tb_passDK").css("color", "red")
+                return false;
+            }
         }
         $("#repasswordInput").blur(KTDangKyMK);
 
 
-        function KiemtraNhapLaiMK(){
-            const passwordInput = document.getElementById("repasswordInput");
-            const password = passwordInput.value;
+        function KiemtraNhapLaiMK() {
+            var passwordInput = document.getElementById("repasswordInput");
+            var password = passwordInput.value;
 
-            const confirmPasswordInput = document.getElementById("repassword");
-            const confirmPassword = confirmPasswordInput.value;
-            if (password === confirmPassword){
-                $("#tb_repassDK").html("Mật khẩu đã trung khớp");  
-                    return true;
-                } else {
-                    $("#tb_repassDK").html("Mật khẩu không trùng khớp");          
-                    return false;
-                }
+            var confirmPasswordInput = document.getElementById("repassword");
+            var confirmPassword = confirmPasswordInput.value;
+            if (password === confirmPassword) {
+                $("#tb_repassDK").html("Mật khẩu đã trung khớp");
+                return true;
+            } else {
+                $("#tb_repassDK").html("Mật khẩu không trùng khớp");
+                return false;
+            }
         }
         $("#repassword").blur(KiemtraNhapLaiMK);
 
 
         function KiemtraHoTen() {
             var rgc = /^[A-Z][a-z]*(\s[A-Z][a-z]*)*$/;
-            if(  rgc.test($("#fnameInput").val()) == true ) {
-                    $("#tb_HoTen").html("Tên hợp lệ");  
-                    return true;
-                } else {
-                    $("#tb_HoTen").html("Tên không hợp lệ");          
-                    return false;
-                }
+            if (rgc.test($("#fnameInput").val()) == true) {
+                $("#tb_HoTen").html("Tên hợp lệ");
+                return true;
+            } else {
+                $("#tb_HoTen").html("Tên không hợp lệ");
+                return false;
+            }
         }
         $("#fnameInput").blur(KiemtraHoTen);
-        
 
 
-        $("#SigninAccount").click(function(){           
-            if ( !KTDN() || !KTMK() ){
+
+        $("#SigninAccount").click(function () {
+            if (!KTDN() || !KTMK()) {
                 $("#tb_To_bu1").html("Mời bạn nhập đúng và đủ thông tin")
-            }else {
-                $("#tb_To_bu1").html("");     
+            } else {
+                $("#tb_To_bu1").html("");
             }
-            var mail = $("#emailInput").val();
-            var them = " Xin chào " + mail;
+            var ten = $("#fnameInput").val();
+            var them = " Xin chào " + ten;
             $("header h6").append(them);
             $("#loginModal").modal("hide");
             return true;
         })
 
-        $("#dangki-btn").click(function(){
+        $("#dangki-btn").click(function () {
             $("#loginModal").modal("hide");
         })
-        
+
 
     </script>
 </body>

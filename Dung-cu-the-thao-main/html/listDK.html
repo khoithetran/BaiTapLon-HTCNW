@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,76 +14,77 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-    <style>
-        /* Header */
-        li{
-            list-style-type: none;
-        }
-        .header img {
-            width: 100px;
-        }
-        .header{
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            height: 60px;
-            align-items: center;
-            box-shadow: 0 .5px  rgba(0, 0, 0, .2);
-            padding-left: 0%;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            z-index: 1000;
-            background-color: #fff;
-        }
+<style>
+    /* Header */
+    li {
+        list-style-type: none;
+    }
 
-        .header .menu_bar_cover,
-        .header .side_bar_cover
-        {
-            display: flex;
-            justify-content: space-between;
-            margin: 0 20px;
-            position: relative;
-        }
+    .header img {
+        width: 100px;
+        height: 60px;
+    }
 
-        .header .menu_bar_cover li
-        {
-            margin: 0 10px;
-            padding: 3px 6px;
-        }
-        .header .side_bar_cover li
-        {
-            margin: 0 6px;
-            padding: 2px 2px;
-        }
-        .header .menu_bar_cover li a,
-        .header .side_bar_cover li a
-        {
-            height: 100%;
-            width: 100%;
-            color: black;
-            font-size: 14px;
-            font-weight: 600;
-        }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        height: 60px;
+        align-items: center;
+        box-shadow: 0 .5px rgba(0, 0, 0, .2);
+        padding-left: 0%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        background-color: #fff;
+    }
 
-        .header .menu_bar_cover li:hover,
-        .header .side_bar_cover li:hover{
-            box-shadow: 0 2px  rgba(0, 0, 0, .6),
-            0 2.25px  rgba(116, 37, 37, 0.6),
-            0 2.5px  rgba(168, 38, 38, 0.6),
-            0 2.75px  rgba(122, 20, 20, 0.6);
-            transition: all .35s ease-in-out;
-            opacity: .7;
-            color: red;
-        }
-    </style>
-                        
-      
+    .header .menu_bar_cover,
+    .header .side_bar_cover {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+        position: relative;
+    }
+
+    .header .menu_bar_cover li {
+        margin: 0 10px;
+        padding: 3px 6px;
+    }
+
+    .header .side_bar_cover li {
+        margin: 0 6px;
+        padding: 2px 2px;
+    }
+
+    .header .menu_bar_cover li a,
+    .header .side_bar_cover li a {
+        height: 100%;
+        width: 100%;
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .header .menu_bar_cover li:hover,
+    .header .side_bar_cover li:hover {
+        box-shadow: 0 2px rgba(0, 0, 0, .6),
+            0 2.25px rgba(116, 37, 37, 0.6),
+            0 2.5px rgba(168, 38, 38, 0.6),
+            0 2.75px rgba(122, 20, 20, 0.6);
+        transition: all .35s ease-in-out;
+        opacity: .7;
+        color: red;
+    }
+</style>
+
+
 <body>
 
     <header class="header">
         <div class="logo_bar">
-            <a href="../index.html"><img src="../img/logo_1.png" alt=""></a>
+            <a href="/index.html"><img src="../img/logo_1.jpg" alt=""></a>
         </div>
         <div class="menu_bar">
             <ul class="menu_bar_cover">
@@ -110,7 +112,9 @@
                 Đăng ký
             </button>
         </li>
-        <center><h3>Danh sách tài khoản</h3></center>
+        <center>
+            <h3>Danh sách tài khoản</h3>
+        </center>
 
     </div>
 
@@ -121,7 +125,7 @@
                     <h3>Tạo tài khoản của bạn</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Đóng">
                         <span aria-hidden="true">&times;</span>
-                    </button>                   
+                    </button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -143,13 +147,13 @@
                             <input required="required" type="password" class="form-control" id="repassword"
                                 placeholder="Xác nhận mật khẩu">
                             <span id="tb_repassDK" style="color: red;"></span>
-                                
+
                         </div>
                         <div class="form-group">
                             <label for="fnameInput">Nhập họ tên</label>
                             <input required="required" type="text" class="form-control" id="fnameInput"
                                 placeholder="Họ và tên">
-                                <span id="tb_HoTen" style="color: red;"></span>
+                            <span id="tb_HoTen" style="color: red;"></span>
                         </div>
                     </form>
                 </div>
@@ -158,8 +162,9 @@
             </div>
         </div>
     </div>
-    <br><br><hr>    
-   <div class="container">
+    <br><br>
+    <hr>
+    <div class="container">
         <table class="table table-borderd table-hover">
             <thead>
                 <tr>
@@ -170,78 +175,89 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>tranthekhoi7895@gmail.com</td>
-                    <td>Khoi Tran</td>
-                    <td>khoithetran9999</td>
-                </tr>
+
             </tbody>
         </table>
-   </div>
+    </div>
 
 
 
-   <script>
-        function KTDangKy(){
-                var rgc = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if(  rgc.test($("#reemailInput").val()) == true ) {
-                    $("#tb_Email_DK").html("Email hợp lệ");  
-                    return true;
-                } else {
-                    $("#tb_Email_DK").html("Email không hợp lệ");          
-                    return false;
-                }
-        }               
+    <script>
+        // Load toàn bộ tài khoản đã có trong local storage
+        var users = JSON.parse(localStorage.getItem('users') || '[]');
+
+        users.forEach(function (user, index) {
+            var them = "<tr> <td>" + (index + 1) + "</td><td>" + user.email + "</td><td>" + user.name + "</td><td>" + user.password + "</td></tr>";
+            $("table tbody").append(them);
+        });
+        
+        function KTDangKy() {
+            var rgc = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (rgc.test($("#reemailInput").val()) == true) {
+                $("#tb_Email_DK").html("Email hợp lệ");
+                $("#tb_Email_DK").css("color", "green"); 
+                return true;
+            } else {
+                $("#tb_Email_DK").html("Email không hợp lệ");
+                $("#tb_Email_DK").css("color", "red");
+                return false;
+            }
+        }
         $("#reemailInput").blur(KTDangKy);
 
-        function KTDangKyMK(){
-                var rgc = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{10,20}$/;
-                if(  rgc.test($("#repasswordInput").val()) == true ) {
-                    $("#tb_passDK").html("Mật khẩu hợp lệ");  
-                    return true;
-                } else {
-                    $("#tb_passDK").html("Mật khẩu không hợp lệ");          
-                    return false;
-                }
+        function KTDangKyMK() {
+            var rgc = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{10,20}$/;
+            if (rgc.test($("#repasswordInput").val()) == true) {
+                $("#tb_passDK").html("Mật khẩu hợp lệ");
+                $("#tb_passDK").css("color", "green");
+                return true;
+            } else {
+                $("#tb_passDK").html("Mật khẩu không hợp lệ");
+                $("#tb_passDK").css("color", "red");
+                return false;
+            }
         }
         $("#repasswordInput").blur(KTDangKyMK);
 
 
-        function KiemtraNhapLaiMK(){
+        function KiemtraNhapLaiMK() {
             const passwordInput = document.getElementById("repasswordInput");
             const password = passwordInput.value;
 
             const confirmPasswordInput = document.getElementById("repassword");
             const confirmPassword = confirmPasswordInput.value;
-            if (password === confirmPassword){
-                $("#tb_repassDK").html("Mật khẩu đã trung khớp");  
-                    return true;
-                } else {
-                    $("#tb_repassDK").html("Mật khẩu không trùng khớp");          
-                    return false;
-                }
+            if (password === confirmPassword) {
+                $("#tb_repassDK").html("Mật khẩu đã trùng khớp");
+                $("#tb_repassDK").css("color", "green");
+                return true;
+            } else {
+                $("#tb_repassDK").html("Mật khẩu không trùng khớp");
+                $("#tb_repassDK").css("color", "red");
+                return false;
+            }
         }
         $("#repassword").blur(KiemtraNhapLaiMK);
 
 
         function KiemtraHoTen() {
             var rgc = /^[A-Z][a-z]*(\s[A-Z][a-z]*)*$/;
-            if(  rgc.test($("#fnameInput").val()) == true ) {
-                    $("#tb_HoTen").html("Tên hợp lệ");  
-                    return true;
-                } else {
-                    $("#tb_HoTen").html("Tên không hợp lệ");          
-                    return false;
-                }
+            if (rgc.test($("#fnameInput").val()) == true) {
+                $("#tb_HoTen").html("Tên hợp lệ");
+                $("#tb_HoTen").css("color", "green");
+                return true;
+            } else {
+                $("#tb_HoTen").html("Tên không hợp lệ");
+                $("#tb_HoTen").css("color", "red");
+                return false;
+            }
         }
         $("#fnameInput").blur(KiemtraHoTen);
-        
+
         var i = 1;
 
-        $("#dangki-btn").click(function(){    
-            i = i + 1 ;       
-            if ( !KTDangKy() || !KTDangKyMK() || !KiemtraNhapLaiMK || !KiemtraHoTen ){
+        $("#dangki-btn").click(function () {
+            i = i + 1;
+            if (!KTDangKy() || !KTDangKyMK() || !KiemtraNhapLaiMK() || !KiemtraHoTen()) {
                 alert("Mời bạn nhập đúng và đủ thông tin");
                 return false;
             } else {
@@ -251,7 +267,7 @@
 
                 // Kiểm tra email đã tồn tại trong local storage hay chưa
                 var users = JSON.parse(localStorage.getItem('users') || '[]');
-                var isEmailExist = users.some(function(user) {
+                var isEmailExist = users.some(function (user) {
                     return user.email === email;
                 });
 
@@ -269,19 +285,20 @@
                 users.push(newUser);
                 localStorage.setItem('users', JSON.stringify(users));
 
-                var them1 = "<tr> <td>" + (i) + "</td><td>" + email + "</td><td>" +  namee + "</td><td>" + passs + "</td></tr>";
+                var them1 = "<tr> <td>" + (i) + "</td><td>" + email + "</td><td>" + namee + "</td><td>" + passs + "</td></tr>";
                 $("table tbody").append(them1);
                 $("#SignInModal").modal("hide");
                 return true;
             }
         });
-        
 
-        
 
-        
-   </script>
-    
-    
+
+
+
+    </script>
+
+
 </body>
+
 </html>
